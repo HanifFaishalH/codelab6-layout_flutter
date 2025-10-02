@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: const EdgeInsets.only(bottom: 5),                  child: const Text(
+                  padding: const EdgeInsets.only(bottom: 5),                  
+                  child: const Text(
                     'Stadion Etihad',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -43,9 +44,9 @@ class MyApp extends StatelessWidget {
         ],
       ),
     );
-    
+
     Color color = Theme.of(context).primaryColor;
-    
+
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -67,7 +68,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Hanif Faishal Hilmi 2341720116',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter layout demo'),
+          title: const Text('Codelab 6'),
         ),
         body: ListView(
           children: [
