@@ -1,3 +1,6 @@
+// lib/pages/home_page.dart
+
+import '../models/Item.dart';
 import 'package:flutter/material.dart';
 
 class ItemPage extends StatelessWidget {
@@ -5,12 +8,15 @@ class ItemPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;
+    
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Detail Item"),
+        backgroundColor: Colors.blueGrey,
+        title: Text(itemArgs.name),
       ),
-      body: const Center(
-        child: Text("Halaman detail untuk item"),
+      body: Center(
+        child: Text('${itemArgs.name} with ${itemArgs.price}'),
       ),
     );
   }
